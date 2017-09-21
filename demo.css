@@ -1,0 +1,153 @@
+﻿
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        
+        body{
+            background:skyblue;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .big_box{
+            width: 684px;
+            height: 237px;
+        }
+        #box{
+            width: 684px;
+            height: 237px;
+            position: relative;
+        }
+        /*季度导航部分*/
+         .calendar_nav{
+             width: 100%;
+             height: 40px;
+             padding-left: 100px;
+             box-sizing: border-box;
+         }
+        .calendar_quarter{
+            width: 100px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            float: left;
+            font-size: 13px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background: #2c578d;
+            color: white;
+            box-sizing: border-box;
+        }
+        .calendar_box{
+            width: 684px;
+            height: 170px;
+            border: 1px solid red;
+            position: absolute;
+            display: none;
+        }
+        /*装每个月日期的盒子*/
+        .calendar{
+            width:180px;
+            height:170px;
+            float: left;
+            margin-right: 25px;
+            margin-left: 23px;
+            position: relative;
+        }
+        /*月份*/
+        .calendar_month{
+            position: absolute;
+            top:3px;
+            left: -25px;
+            color:#999999;
+            font-size: 24px;
+            font-weight:700;
+        }
+
+
+        #box ul{
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+
+        #box ul li {
+            list-style: none;
+            float: left;
+            width: 14%;
+            height: 24px;
+            text-align: center;
+            font-size:12px;
+            line-height: 25px;
+            position: relative;
+
+        }
+  /*点击变色*/
+        .red{
+            background:red;
+            border-radius: 100px;
+        }
+
+
+        /*提示框*/
+        .calendar_tips{
+            position: absolute;
+            display: inline-block;
+            width: 130px;
+            height: 80px;
+            display: none;
+            z-index: 9;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            border-radius: 10px;
+            font-size: 11px;
+            text-align: center;
+        }
+        /*点击变蓝色*/
+        .dataBlue{
+            background: #2c578d;
+            border-radius: 100px;
+
+        }
+        /*等级颜色*/
+        .whiteLevel{ background:white;}
+        .blueLevel{ background:#00A1E9;}
+        .yellowLevel{ background:#EDC300;}
+        .orangeLevel{ background:#F57921;}
+        .redLevel{ background:#E50112;}
+
+
+        /*同一天多个等级*/
+        .whiteLevel.blueLevel{background:url(calendar/whiteLevel.png)no-repeat #00A1E9;}
+        /*白蓝*/
+
+        .whiteLevel.yellowLevel{background:url(calendar/whiteLevel.png)no-repeat #EDC300;}
+        /*白黄*/
+
+        .whiteLevel.orangeLevel{background:url(calendar/whiteLevel.png)no-repeat #F57921;}
+        /*白橙*/
+
+        .whiteLevel.redLevel{background:url(calendar/whiteLevel.png)no-repeat #E50112;}
+        /*白红*/
+
+        .blueLevel.yellowLevel{background:url(calendar/blueLevel.png)no-repeat #EDC300;}
+        /*蓝黄*/
+
+        .blueLevel.orangeLevel{background:url(calendar/blueLevel.png)no-repeat #F57921;}
+        /*蓝橙*/
+
+        .blueLevel.redLevel{background:url(calendar/blueLevel.png)no-repeat #E50112;}
+        /*蓝红*/
+
+        .yellowLevel.orangeLevel{background:url(calendar/yellowLevel.png)no-repeat #F57921;}
+        /*黄橙*/
+
+        .yellowLevel.redLevel{background:url(calendar/yellowLevel.png)no-repeat #E50112;}
+        /*黄红*/
+
+        .orangeLevel.redLevel{background:url(calendar/orangeLevel.png)no-repeat #E50112;}
